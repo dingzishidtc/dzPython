@@ -22,8 +22,20 @@
 
 # a=[1,2,3,4,5,6,7,8,9,10,22]
 # findarr(a,10)
-import easygui
-easygui.msgbox('Hello World')
+
+import classtest as A
+
+a=A.Ball()
+a.aaa="5555"
+a.setName("qiuA11",3)
+print(a.kick())
+print(a.aaa)
+
+
+
+#---------------------------------------------------------------------------
+# import easygui
+# easygui.msgbox('Hello World')
 
 
 #---------------------------------------------------------------------------
