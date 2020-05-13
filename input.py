@@ -1,12 +1,14 @@
-Traceback (most recent call last):
-  File "aa.py", line 51, in <module>
-    import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())
-NameError: name 'sublime' is not defined
+#!/usr/bin/ruby -w
+# -*- coding : utf-8 -*-
+# 
+# import sys
+# print(sys.stdin.encoding)
+# print(sys.stdout.encoding)
+# print("222")
+# list1 = ['A','B','C']
+# dict1 = {}
+# for i in range(3):
+#     order = int(input('你要把'+list1[i]+'放在第几位？（请输入数字1,2,3)'))
+#     dict1[order] = list1[i]
+# print(dict1)  
 
-***Repl Closed***
-
-
-
-
-x=input("what?")
-print('hello,x')

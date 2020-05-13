@@ -23,13 +23,20 @@
 # a=[1,2,3,4,5,6,7,8,9,10,22]
 # findarr(a,10)
 
-import classtest as A
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
-a=A.Ball()
-a.aaa="5555"
-a.setName("qiuA11",3)
-print(a.kick())
-print(a.aaa)
+x=[[(str(m)+"*"+str(i)+"="+str(i*m)) for m in range(1,10) if i>=m] for i in range(1,10)]
+print (x)
+
+
+# import classtest as A
+
+# a=A.Ball()
+# a.aaa="5555"
+# a.setName("qiuA11",3)
+# print(a.kick())
+# print(a.aaa)
 
 
 
