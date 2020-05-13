@@ -80,14 +80,21 @@
 # print(nonZero(0))  
 # 
 
+import json
+head = {}
+head['User-Agent']='Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36'
+json.dumps(head)
+print(head)
+print(type(head))
+
 #容器类
 # class CountList:
-list=['小明','小红','小蓝']
-for item in enumerate(list):
-	print(item)
-# x = [i for i in range(5)]
-# print(x)
-print(__name__)
+# list=['小明','小红','小蓝']
+# for item in enumerate(list):
+# 	print(item)
+# # x = [i for i in range(5)]
+# # print(x)
+# print(__name__)
 
 
 # #------------------------------------------------------------------------

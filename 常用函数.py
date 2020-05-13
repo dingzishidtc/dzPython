@@ -26,8 +26,23 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-x=[[(str(m)+"*"+str(i)+"="+str(i*m)) for m in range(1,10) if i>=m] for i in range(1,10)]
-print (x)
+
+import time
+import hashlib
+
+#时间戳转化
+print(int(time.time()*10000))
+
+# 中文加密方法
+data="哈哈"
+str1_md5=hashlib.md5(data.encode(encoding='UTF-8')).hexdigest()
+#英文加密方法
+str2_md5 = hashlib.md5(b'this is a md5 test.').hexdigest()
+print(str1_md5)
+print(str2_md5)
+
+
+# print(len("92eef822f87d8b724a9cc6fa0133d942"))
 
 
 # import classtest as A
