@@ -37,7 +37,7 @@ print(int(time.time()*10000))
 data="哈哈"
 str1_md5=hashlib.md5(data.encode(encoding='UTF-8')).hexdigest()
 #英文加密方法
-str2_md5 = hashlib.md5(b'this is a md5 test.').hexdigest()
+str2_md5 = hashlib.md5(b'18').hexdigest()
 print(str1_md5)
 print(str2_md5)
 

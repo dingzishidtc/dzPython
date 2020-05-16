@@ -44,7 +44,7 @@ head['User-Agent']='Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHT
 # #处理方法2，直接用json.loads(html)的方式读取json文件，注：下面取出来的a是个字典类型，所以tgt还是得用字典的下标定位获取
 # # a=json.loads(html)['translateResult'][0][0]
 # # print(a)
-# # print(type(a))
+# print(type(a))
 # # print(a['tgt'])
 
 
