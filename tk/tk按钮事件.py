@@ -1,5 +1,7 @@
 from tkinter import *
 
+
+# 按钮事件的用法
 def callback():
 	var.set("傻屌")
 
@@ -26,4 +28,6 @@ theButton.pack()
 
 frame1.pack(padx=10,pady=10)
 frame2.pack(padx=10,pady=10)
-mainloop()
+
+
+root.mainloop()

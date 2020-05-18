@@ -5,7 +5,7 @@ root=Tk()
 photo= PhotoImage(file="背景图.gif")
 textLabel=Label(root,
 	text="你又在打飞机了\n带我一起打飞机吧",
-	justify=LEFT,
+	justify=LEFT,#字符串左对齐
 	padx=10,
 	image=photo,
 	compound=CENTER,
