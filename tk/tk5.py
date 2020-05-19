@@ -4,47 +4,36 @@ from tkinter import *
 
 root=Tk()
 
-frame3=Frame(root)
-frame1=Frame(frame3)
-frame2=Frame(frame3)
-frame4=Frame(root)
 
 
+Label(root,text='用户名：').grid(row=0,column=0)
 
-a1=Label(frame1,text='作品：')
-a1.pack(side=TOP,padx=10,pady=20)
+Label(root,text='密码：').grid(row=1,column=0)
 
-a2=Label(frame1,text='作者：')
-a2.pack(side=BOTTOM,padx=10,pady=20)
-
-
-b1=Entry(frame2)
-# b1.insert(0,"零基础入门学习python")
-b1.pack(padx=10,pady=20,side=TOP)
-b2=Entry(frame2)
-# b2.insert(0,"初学者：丁枝")
-b2.pack(padx=10,pady=20,side=BOTTOM)
-
+v1=StringVar()
+v2=StringVar()
+b1=Entry(root,textvariable=v1)
+b1.grid(row=0,column=1,padx=10,pady=5)
+b2=Entry(root,textvariable=v2,show="*")
+b2.grid(row=1,column=1,padx=10,pady=5)
 
 def show():
-	print("作品：	《%s》"% b1.get())
-	print("作者：	%s"% b2.get())
+	print("用户名：	《%s》"% b1.get())
+	print("密码：	%s"% b2.get())
 	# .delete(0,END)
 
-Button(frame4,text="获取信息",command=show()).pack(padx=10,pady=20,side=LEFT)
+Button(root,text="假的登录",command=show)\
+	.grid(row=3,column=0,padx=10,pady=5,sticky=W)
 
-c2=Button(frame4,text="退出",command=root.quit)
-c2.pack(padx=10,pady=20,side=RIGHT)
+
+Button(root,text="退出",command=root.quit)\
+	.grid(row=3,column=1,padx=10,pady=5,sticky=E)
+
 
 
 # e.delete(0,END)
 # e.insert(0,"66666")
 
 
-
-frame1.pack(padx=10,pady=10,side=LEFT)
-frame2.pack(padx=10,pady=10,side=RIGHT)
-frame3.pack(padx=10,pady=10,side=TOP)
-frame4.pack(side=BOTTOM)
-
-root.mainloop()
+# root.mainloop()
+mainloop()

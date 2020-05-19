@@ -26,20 +26,25 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+if "1" in "0123456789" :
+	print("正确")
+else:
+	print("错误")
 
-import time
-import hashlib
+#md5加密
+# import time
+# import hashlib
 
-#时间戳转化
-print(int(time.time()*10000))
+# #时间戳转化
+# print(int(time.time()*10000))
 
-# 中文加密方法
-data="哈哈"
-str1_md5=hashlib.md5(data.encode(encoding='UTF-8')).hexdigest()
-#英文加密方法
-str2_md5 = hashlib.md5(b'18').hexdigest()
-print(str1_md5)
-print(str2_md5)
+# # 中文加密方法
+# data="哈哈"
+# str1_md5=hashlib.md5(data.encode(encoding='UTF-8')).hexdigest()
+# #英文加密方法
+# str2_md5 = hashlib.md5(b'18').hexdigest()
+# print(str1_md5)
+# print(str2_md5)
 
 
 # print(len("92eef822f87d8b724a9cc6fa0133d942"))

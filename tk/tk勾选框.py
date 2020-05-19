@@ -4,16 +4,16 @@ root = Tk()
 
 
 
-# # 多选框用法
-# GIRLS=['西施',"貂蝉",'王昭君','杨玉环']
-# v=[]
+# 多选框用法
+GIRLS=['西施',"貂蝉",'王昭君','杨玉环']
+v=[]
 
-# for girl in GIRLS:
-# 	v.append(IntVar())
-# 	b=Checkbutton(root,text=girl,variable=v[-1])
-# 	b.pack(anchor='w')
-# 	l=Label(root,textvariable=v[-1])
-# 	l.pack()
+for girl in GIRLS:
+	v.append(IntVar())
+	b=Checkbutton(root,text=girl,variable=v[-1])
+	b.pack(anchor='w')
+	l=Label(root,textvariable=v[-1])
+	l.pack()
 
 # #单选框用法
 # v=IntVar()
@@ -22,10 +22,10 @@ root = Tk()
 # Radiobutton(root,text="three",variable=v,value=3).pack(anchor=W)
 # l=Label(root,textvariable=v)
 # l.pack()
-# 
 
 
-#单选框配合框架
+
+# #### 单选框配合框架
 # group = LabelFrame(root,text="最好的脚本语言是？",padx=5,pady=5)
 # group.pack(padx=10,pady=10)
 
