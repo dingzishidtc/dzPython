@@ -3,7 +3,7 @@ from tkinter import *
 
 root=Tk()
 
-#生成画布
+# 生成画布
 w=Canvas(root,width=400,height=200)
 w.pack()
 

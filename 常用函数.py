@@ -1,4 +1,4 @@
-#!/usr/bin/ruby -w
+#!/usr/bin/python 
 # -*- coding : utf-8 -*-
 
 # def findarr(arrold, a,hash1={}):
@@ -25,11 +25,12 @@
 
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+b=[str(i) for i in range(10)]
+print(b)
+a="验证码".join(b)
+print(a)
 
-if "1" in "0123456789" :
-	print("正确")
-else:
-	print("错误")
+
 
 #md5加密
 # import time
