@@ -23,14 +23,13 @@
 # a=[1,2,3,4,5,6,7,8,9,10,22]
 # findarr(a,10)
 
-from suds.client import Client
+a=b=c=1
+b+=1
+print(id(a))
+print(id(b))
+print(id(c))
 
-header={}
-
-user_url="http://localhost:8880/finance-user_info-war-1.0/ws/financeUserInfoFacade.ws?wsdl" #这里是你的webservice访问地址
-client=Client(user_url)#Client里面直接放访问的URL，可以生成一个webservice对象
-print(client)#打印所webservice里面的所有接口方法名称，结果如下截图所示：
-
+print(a,b,c)
 #md5加密
 # import time
 # import hashlib
