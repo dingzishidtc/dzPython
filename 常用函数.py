@@ -23,13 +23,33 @@
 # a=[1,2,3,4,5,6,7,8,9,10,22]
 # findarr(a,10)
 
-a=b=c=1
-b+=1
-print(id(a))
-print(id(b))
-print(id(c))
+# # #判断处理后的i是否小于0，小于0则归零，3种写法
+# for i in range(10):
+# 	# i=[0,i][(i-2) > 0]
+# 	# i=max(0,i-2)
+# 	i=0 if i-2<0 else i-2
+# 	print(i)
 
-print(a,b,c)
+a=[]
+a.append(0)
+a[0]= 1
+a.append(0)
+a.append(0)
+a=[0,1,0]
+a.append(0)
+b=a[1:-1]
+print(a[1:-1])
+print(a[1:-1].remove(0))
+b.remove(0)
+print("111")
+print(a)
+print(a[0:1])
+print(b)
+a=a[0:1]+b
+print(a)
+# a=a[0]+a[1:-1].remove(0)
+# print(a)
+
 #md5加密
 # import time
 # import hashlib
