@@ -30,23 +30,13 @@
 # 	i=0 if i-2<0 else i-2
 # 	print(i)
 
-a=[]
-a.append(0)
-a[0]= 1
-a.append(0)
-a.append(0)
-a=[0,1,0]
-a.append(0)
-b=a[1:-1]
-print(a[1:-1])
-print(a[1:-1].remove(0))
-b.remove(0)
-print("111")
-print(a)
-print(a[0:1])
-print(b)
-a=a[0:1]+b
-print(a)
+
+import os
+
+# Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR+= '\\dzPython\\templates'
+print(BASE_DIR)
 # a=a[0]+a[1:-1].remove(0)
 # print(a)
 

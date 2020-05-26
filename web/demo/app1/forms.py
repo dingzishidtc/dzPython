@@ -1,0 +1,6 @@
+#-*-coding:GBK -*-
+from django import forms
+
+class PersonForm(forms.Form):
+    first_name = forms.CharField(label='ÄãµÄÃû×Ö',max_length=20)
+    last_name = forms.CharField(label='ÄãµÄĞÕÊÏ',max_length=20)
