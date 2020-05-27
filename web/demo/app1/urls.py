@@ -5,5 +5,7 @@ urlpatterns = [
     # path('articles/2020', app1_views.articles),
     # path('articles/<int:year>', app1_views.articles),
     # re_path(r'^articles/(?P<year>[0-9]{4})/$', app1_views.articles),
-    path('get_name', app1_views.get_name),
+    # path('get_name', app1_views.get_name),
+    path('get_name', app1_views.PersonFormView.as_view()),
+    path("person_detail/<int:pk>",app1_views.person_detail)
 ]
