@@ -30,13 +30,16 @@
 # 	i=0 if i-2<0 else i-2
 # 	print(i)
 
-
 import os
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, "static","images"),
+)
 
-a=1
-b=1
-if a==b:
-	print(a)
+print(BASE_DIR)
+print(STATICFILES_DIRS)
+
+
 # a=a[0]+a[1:-1].remove(0)
 # print(a)
 

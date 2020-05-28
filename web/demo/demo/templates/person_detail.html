@@ -16,11 +16,13 @@
 {% else %}
 444
 {% endif %}
-<ul id="photos">
-    <li><img src="images/pic1.jpg"></li>
-    <li><img src="images/pic2.jpg"></li>
-    <li><img src="images/pic3.jpg"></li>
-</ul>
+<h1>我的第一个标题</h1>
+
+<p>我的第一个段落。</p>
+<a href="https://www.runoob.com">这是一个链接</a>
+{% load static %}
+<img src = "{% static 'imges/logo.png' %}" width="258" height="39" />
+<!--<body background="{% static 'imges/logo.png' %}"></body>-->
 
 
 </body>
