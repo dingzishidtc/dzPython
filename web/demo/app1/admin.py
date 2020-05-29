@@ -11,6 +11,6 @@ class PersonAdmin(admin.ModelAdmin):
     list_filter = ("first_name","last_name")
     #增加搜索功能
     search_fields = ("first_name","last_name")
-
+    list_per_page = 5
 
 admin.site.register(Person,PersonAdmin)
